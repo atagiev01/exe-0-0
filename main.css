@@ -9,6 +9,10 @@
   display: none;
 }
 
+.product-information {
+  width: 100%;
+}
+
 .d-row {
   display: flex;
   flex-direction: row;
@@ -239,7 +243,7 @@ img {
 .information .rows .pieces {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 5%;
 }
 .information .rows .pieces .wp-button {
   width: 150px;
@@ -429,6 +433,51 @@ img {
 }
 @media only screen and (max-width: 765px) {
   .container {
+    display: flex;
+    width: 85% !important;
+    padding: 0;
+  }
+  .container .row {
+    content: "";
+    display: flex;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    clear: both;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .positive-gallery-slider .side-img {
+    display: flex;
+    flex-direction: row;
+  }
+  .positive-gallery-slider .side-img {
+    flex-basis: 150px;
+    display: flex;
+    flex-direction: row;
+  }
+  .positive-gallery-slider .side-img {
+    overflow-y: hidden !important;
+    overflow: scroll;
+    flex-basis: 150px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .zoom-image {
+    margin: 0;
+  }
+  .positive-gallery-slider {
+    width: 360px;
+    height: 700px;
+    gap: 35px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .container {
     padding: 0;
   }
   .container .row {
@@ -505,6 +554,12 @@ img {
   }
 }
 @media only screen and (max-width: 390px) {
+  .container {
+    top: 20px;
+  }
+  .information .title-head h1 {
+    font-size: 20px;
+  }
   .positive-gallery-slider {
     width: 340px;
     height: 700px;

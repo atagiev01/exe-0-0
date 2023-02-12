@@ -56,6 +56,10 @@ li{
   table {
     width: 100%!important;
 }
+td {
+  display: flow-root;
+  padding: 5px;
+}
 
 }
 
