@@ -2,11 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
 }
 
 #myModal {
   display: none;
+}
+
+.d-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-icon {
+  display: flex;
+  align-items: center;
 }
 
 .activess:active {
@@ -71,10 +81,10 @@
 .zoom-image {
   flex: 1;
   cursor: crosshair;
-  background-size: 300px 100px;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-left: 15px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 #prev {
@@ -215,9 +225,10 @@ img {
   display: flex;
   align-items: center;
 }
-.information .product-information .product-cargo-free button {
+.information .product-information .product-cargo-free .btn-cargo {
   border: 1px solid rgb(184, 184, 184);
   width: 150px;
+  height: 50px;
   padding: 10px;
   display: flex;
   background-color: #eee;
@@ -246,10 +257,9 @@ img {
 }
 .information .info-product h1 {
   line-height: 1.2;
-  font-family: inherit;
   font-weight: 500;
   color: #000;
-  font-size: 20px;
+  font-size: 28px;
 }
 .information .info-product span {
   margin-top: 0;
@@ -313,6 +323,8 @@ img {
 @media only screen and (max-width: 990px) {
   .container .row {
     padding: 100px 0px;
+    top: 20px;
+    position: relative;
     align-items: center;
     flex-direction: column;
   }
@@ -429,9 +441,6 @@ img {
     gap: 0px;
     flex-direction: column;
   }
-  .zoom-image {
-    margin-left: 0px;
-  }
   .positive-gallery-slider .side-img {
     display: flex;
     flex-direction: row;
@@ -449,6 +458,9 @@ img {
     gap: 20px;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+  .zoom-image {
+    margin: 0;
   }
   .positive-gallery-slider {
     width: 360px;
@@ -543,6 +555,15 @@ img {
     gap: 35px;
     display: flex;
     flex-direction: column-reverse;
+  }
+  td {
+    padding: 5px 0px !important;
+  }
+  .information .rows .pieces {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 #prev {

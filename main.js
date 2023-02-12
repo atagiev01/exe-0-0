@@ -70,10 +70,21 @@ this.className += " active";
                 let ele = e.target;
                 if(ele.classList.contains('small-preview')){
                     imgZoom.style.backgroundImage = `url(${ele.src})`
+                    
+                    
                 }
             })
             imgZoom.addEventListener('mouseenter', function(){
-                this.style.backgroundSize = '200%';
+              this.style.backgroundSize = '250%';
+              this.style.backgroundRepeat = 'no-repeat';
+
+
+
+
+
+
+
+
             })
             imgZoom.addEventListener('mousemove', function(e){
 
